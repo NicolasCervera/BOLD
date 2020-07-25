@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="28ac373ae1a84ab790707a733ec02147" Name="Diagram1" ZoomLevel="96">
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.Cargo" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.Cliente" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.DetalleTurno" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.Dia" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.DiaxPromocion" Width="1.5" PointX="7.5" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.Mes" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.Personal" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.Promocion" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.Servicio" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.TiempoEspera" Width="1.5" PointX="10.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.TipoServicio" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.Turno" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__Personal__Id_Car__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__Turno__Id_Clie__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__DetalleTu__Id_Pe__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__DetalleTu__Id_TS__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__DetalleTu__Id_Tu__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__Dia__Id_Mes__1ED998B2" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__DiaxPromo__Id_Di__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__DiaxPromo__Id_Pr__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__Turno__Id_Pers__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__Promocion__Id_TS__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__TipoServi__Id_Se__1A14E395" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__Turno__Id_TS__29572725" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.Labor" Width="1.5" PointX="5.25" PointY="17.375" />
+        <AssociationConnector Association="BDDPeluqueriaModel.FK__Labor__Id_TipS__49C3F6B7" />
+        <EntityTypeShape EntityType="BDDPeluqueriaModel.V_Clientes" Width="1.5" PointX="10.375" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

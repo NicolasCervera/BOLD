@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDDPeluqueriaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cargo">
+    <Key>
+      <PropertyRef Name="Id_Cargo" />
+    </Key>
+    <Property Name="Id_Cargo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="400" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Id_Clie" />
+    </Key>
+    <Property Name="Id_Clie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Apellido" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Fecha_Nacimiento" Type="date" />
+    <Property Name="Dni" Type="int" />
+    <Property Name="Detalle" Type="varchar" MaxLength="600" />
+    <Property Name="Fecha_Inscrip" Type="date" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+    <Property Name="E_mail" Type="varchar" MaxLength="200" />
+    <Property Name="Telefono" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="DetalleTurno">
+    <Key>
+      <PropertyRef Name="Id_DetTur" />
+    </Key>
+    <Property Name="Id_DetTur" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Tur" Type="int" Nullable="false" />
+    <Property Name="Id_TS" Type="int" Nullable="false" />
+    <Property Name="Id_Pers" Type="int" Nullable="false" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Dia">
+    <Key>
+      <PropertyRef Name="Id_Dia" />
+    </Key>
+    <Property Name="Id_Dia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Mes" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="200" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="DiaxPromocion">
+    <Key>
+      <PropertyRef Name="Id_DxP" />
+    </Key>
+    <Property Name="Id_DxP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Dia" Type="int" Nullable="false" />
+    <Property Name="Id_Prom" Type="int" Nullable="false" />
+    <Property Name="Duracion" Type="date" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Labor">
+    <Key>
+      <PropertyRef Name="IdLabor" />
+    </Key>
+    <Property Name="IdLabor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_TipS" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="int" />
+    <Property Name="Detalle" Type="varchar" MaxLength="700" />
+  </EntityType>
+  <EntityType Name="Mes">
+    <Key>
+      <PropertyRef Name="Id_Mes" />
+    </Key>
+    <Property Name="Id_Mes" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="200" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Personal">
+    <Key>
+      <PropertyRef Name="Id_Pers" />
+    </Key>
+    <Property Name="Id_Pers" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Cargo" Type="int" Nullable="false" />
+    <Property Name="Nick" Type="varchar" MaxLength="300" />
+    <Property Name="Clave" Type="varchar" MaxLength="300" />
+    <Property Name="Nombre" Type="varchar" MaxLength="400" Nullable="false" />
+    <Property Name="Apellido" Type="varchar" MaxLength="400" Nullable="false" />
+    <Property Name="Fecha_Nacimiento" Type="date" />
+    <Property Name="Dni" Type="varchar" MaxLength="200" />
+    <Property Name="Detalle" Type="varchar" MaxLength="600" />
+    <Property Name="Fecha_Ingreso" Type="date" />
+    <Property Name="Sueldo" Type="int" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Promocion">
+    <Key>
+      <PropertyRef Name="Id_Prom" />
+    </Key>
+    <Property Name="Id_Prom" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_TS" Type="int" Nullable="false" />
+    <Property Name="Descuento" Type="int" />
+    <Property Name="Total" Type="int" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Servicio">
+    <Key>
+      <PropertyRef Name="Id_Serv" />
+    </Key>
+    <Property Name="Id_Serv" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="400" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TiempoEspera">
+    <Key>
+      <PropertyRef Name="Id_Tur" />
+    </Key>
+    <Property Name="Id_Tur" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoraTurno" Type="time" Precision="7" />
+    <Property Name="HoraAviso" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="TipoServicio">
+    <Key>
+      <PropertyRef Name="Id_TS" />
+    </Key>
+    <Property Name="Id_TS" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Serv" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="400" />
+    <Property Name="Detalle" Type="varchar" MaxLength="400" />
+    <Property Name="Precio" Type="int" />
+    <Property Name="Duracion" Type="time" Precision="7" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Turno">
+    <Key>
+      <PropertyRef Name="Id_Tur" />
+    </Key>
+    <Property Name="Id_Tur" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Clie" Type="int" Nullable="false" />
+    <Property Name="Id_TS" Type="int" Nullable="false" />
+    <Property Name="Id_Pers" Type="int" Nullable="false" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="Hora" Type="time" Precision="7" />
+    <Property Name="Total" Type="int" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDPeluqueria.dbo.V_Clientes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="V_Clientes">
+    <Key>
+      <PropertyRef Name="Id_Clie" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="Apellido" />
+    </Key>
+    <Property Name="Id_Clie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Apellido" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Fecha_Nacimiento" Type="date" />
+    <Property Name="Dni" Type="int" />
+    <Property Name="Detalle" Type="varchar" MaxLength="600" />
+    <Property Name="Fecha_Inscrip" Type="date" />
+    <Property Name="Estado" Type="varchar" MaxLength="200" />
+    <Property Name="E_mail" Type="varchar" MaxLength="200" />
+    <Property Name="Telefono" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <Association Name="FK__DetalleTu__Id_Pe__2F10007B">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="1" />
+    <End Role="DetalleTurno" Type="Self.DetalleTurno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="Id_Pers" />
+      </Principal>
+      <Dependent Role="DetalleTurno">
+        <PropertyRef Name="Id_Pers" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleTu__Id_TS__2E1BDC42">
+    <End Role="TipoServicio" Type="Self.TipoServicio" Multiplicity="1" />
+    <End Role="DetalleTurno" Type="Self.DetalleTurno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoServicio">
+        <PropertyRef Name="Id_TS" />
+      </Principal>
+      <Dependent Role="DetalleTurno">
+        <PropertyRef Name="Id_TS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleTu__Id_Tu__2D27B809">
+    <End Role="Turno" Type="Self.Turno" Multiplicity="1" />
+    <End Role="DetalleTurno" Type="Self.DetalleTurno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="Id_Tur" />
+      </Principal>
+      <Dependent Role="DetalleTurno">
+        <PropertyRef Name="Id_Tur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Dia__Id_Mes__1ED998B2">
+    <End Role="Mes" Type="Self.Mes" Multiplicity="1" />
+    <End Role="Dia" Type="Self.Dia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mes">
+        <PropertyRef Name="Id_Mes" />
+      </Principal>
+      <Dependent Role="Dia">
+        <PropertyRef Name="Id_Mes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DiaxPromo__Id_Di__24927208">
+    <End Role="Dia" Type="Self.Dia" Multiplicity="1" />
+    <End Role="DiaxPromocion" Type="Self.DiaxPromocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dia">
+        <PropertyRef Name="Id_Dia" />
+      </Principal>
+      <Dependent Role="DiaxPromocion">
+        <PropertyRef Name="Id_Dia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DiaxPromo__Id_Pr__25869641">
+    <End Role="Promocion" Type="Self.Promocion" Multiplicity="1" />
+    <End Role="DiaxPromocion" Type="Self.DiaxPromocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promocion">
+        <PropertyRef Name="Id_Prom" />
+      </Principal>
+      <Dependent Role="DiaxPromocion">
+        <PropertyRef Name="Id_Prom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Labor__Id_TipS__49C3F6B7">
+    <End Role="TipoServicio" Type="Self.TipoServicio" Multiplicity="1" />
+    <End Role="Labor" Type="Self.Labor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoServicio">
+        <PropertyRef Name="Id_TS" />
+      </Principal>
+      <Dependent Role="Labor">
+        <PropertyRef Name="Id_TipS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Personal__Id_Car__15502E78">
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="1" />
+    <End Role="Personal" Type="Self.Personal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="Id_Cargo" />
+      </Principal>
+      <Dependent Role="Personal">
+        <PropertyRef Name="Id_Cargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Promocion__Id_TS__21B6055D">
+    <End Role="TipoServicio" Type="Self.TipoServicio" Multiplicity="1" />
+    <End Role="Promocion" Type="Self.Promocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoServicio">
+        <PropertyRef Name="Id_TS" />
+      </Principal>
+      <Dependent Role="Promocion">
+        <PropertyRef Name="Id_TS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TipoServi__Id_Se__1A14E395">
+    <End Role="Servicio" Type="Self.Servicio" Multiplicity="1" />
+    <End Role="TipoServicio" Type="Self.TipoServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicio">
+        <PropertyRef Name="Id_Serv" />
+      </Principal>
+      <Dependent Role="TipoServicio">
+        <PropertyRef Name="Id_Serv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Turno__Id_Clie__286302EC">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Turno" Type="Self.Turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id_Clie" />
+      </Principal>
+      <Dependent Role="Turno">
+        <PropertyRef Name="Id_Clie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Turno__Id_Pers__2A4B4B5E">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="1" />
+    <End Role="Turno" Type="Self.Turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="Id_Pers" />
+      </Principal>
+      <Dependent Role="Turno">
+        <PropertyRef Name="Id_Pers" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Turno__Id_TS__29572725">
+    <End Role="TipoServicio" Type="Self.TipoServicio" Multiplicity="1" />
+    <End Role="Turno" Type="Self.Turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoServicio">
+        <PropertyRef Name="Id_TS" />
+      </Principal>
+      <Dependent Role="Turno">
+        <PropertyRef Name="Id_TS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDDPeluqueriaModelStoreContainer">
+    <EntitySet Name="Cargo" EntityType="Self.Cargo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetalleTurno" EntityType="Self.DetalleTurno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dia" EntityType="Self.Dia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DiaxPromocion" EntityType="Self.DiaxPromocion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Labor" EntityType="Self.Labor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mes" EntityType="Self.Mes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Personal" EntityType="Self.Personal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Promocion" EntityType="Self.Promocion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Servicio" EntityType="Self.Servicio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TiempoEspera" EntityType="Self.TiempoEspera" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoServicio" EntityType="Self.TipoServicio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Turno" EntityType="Self.Turno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="V_Clientes" EntityType="Self.V_Clientes" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_Clientes].[Id_Clie] AS [Id_Clie], 
+    [V_Clientes].[Nombre] AS [Nombre], 
+    [V_Clientes].[Apellido] AS [Apellido], 
+    [V_Clientes].[Fecha_Nacimiento] AS [Fecha_Nacimiento], 
+    [V_Clientes].[Dni] AS [Dni], 
+    [V_Clientes].[Detalle] AS [Detalle], 
+    [V_Clientes].[Fecha_Inscrip] AS [Fecha_Inscrip], 
+    [V_Clientes].[Estado] AS [Estado], 
+    [V_Clientes].[E_mail] AS [E_mail], 
+    [V_Clientes].[Telefono] AS [Telefono]
+    FROM [dbo].[V_Clientes] AS [V_Clientes]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__DetalleTu__Id_Pe__2F10007B" Association="Self.FK__DetalleTu__Id_Pe__2F10007B">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="DetalleTurno" EntitySet="DetalleTurno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleTu__Id_TS__2E1BDC42" Association="Self.FK__DetalleTu__Id_TS__2E1BDC42">
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+      <End Role="DetalleTurno" EntitySet="DetalleTurno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleTu__Id_Tu__2D27B809" Association="Self.FK__DetalleTu__Id_Tu__2D27B809">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="DetalleTurno" EntitySet="DetalleTurno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Dia__Id_Mes__1ED998B2" Association="Self.FK__Dia__Id_Mes__1ED998B2">
+      <End Role="Mes" EntitySet="Mes" />
+      <End Role="Dia" EntitySet="Dia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DiaxPromo__Id_Di__24927208" Association="Self.FK__DiaxPromo__Id_Di__24927208">
+      <End Role="Dia" EntitySet="Dia" />
+      <End Role="DiaxPromocion" EntitySet="DiaxPromocion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DiaxPromo__Id_Pr__25869641" Association="Self.FK__DiaxPromo__Id_Pr__25869641">
+      <End Role="Promocion" EntitySet="Promocion" />
+      <End Role="DiaxPromocion" EntitySet="DiaxPromocion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Labor__Id_TipS__49C3F6B7" Association="Self.FK__Labor__Id_TipS__49C3F6B7">
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+      <End Role="Labor" EntitySet="Labor" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Personal__Id_Car__15502E78" Association="Self.FK__Personal__Id_Car__15502E78">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="Personal" EntitySet="Personal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Promocion__Id_TS__21B6055D" Association="Self.FK__Promocion__Id_TS__21B6055D">
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+      <End Role="Promocion" EntitySet="Promocion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TipoServi__Id_Se__1A14E395" Association="Self.FK__TipoServi__Id_Se__1A14E395">
+      <End Role="Servicio" EntitySet="Servicio" />
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Turno__Id_Clie__286302EC" Association="Self.FK__Turno__Id_Clie__286302EC">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Turno" EntitySet="Turno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Turno__Id_Pers__2A4B4B5E" Association="Self.FK__Turno__Id_Pers__2A4B4B5E">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="Turno" EntitySet="Turno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Turno__Id_TS__29572725" Association="Self.FK__Turno__Id_TS__29572725">
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+      <End Role="Turno" EntitySet="Turno" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

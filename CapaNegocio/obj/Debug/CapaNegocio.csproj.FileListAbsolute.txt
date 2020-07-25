@@ -1,0 +1,54 @@
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.xml
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Proyectos\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.dll
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.SqlServer.dll
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.xml
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.SqlServer.xml
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.dll.config
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.xml
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Sistemas Independientes\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.dll
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.SqlServer.dll
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.xml
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\EntityFramework.SqlServer.xml
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\bin\Debug\CapaDatos.dll.config
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete

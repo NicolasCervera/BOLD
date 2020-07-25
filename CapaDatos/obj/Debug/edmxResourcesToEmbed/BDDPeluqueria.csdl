@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDDPeluqueriaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cargo">
+    <Key>
+      <PropertyRef Name="Id_Cargo" />
+    </Key>
+    <Property Name="Id_Cargo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Personal" Relationship="Self.FK__Personal__Id_Car__15502E78" FromRole="Cargo" ToRole="Personal" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Id_Clie" />
+    </Key>
+    <Property Name="Id_Clie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Dni" Type="Int32" />
+    <Property Name="Detalle" Type="String" MaxLength="600" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Inscrip" Type="DateTime" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="E_mail" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Turno" Relationship="Self.FK__Turno__Id_Clie__286302EC" FromRole="Cliente" ToRole="Turno" />
+  </EntityType>
+  <EntityType Name="DetalleTurno">
+    <Key>
+      <PropertyRef Name="Id_DetTur" />
+    </Key>
+    <Property Name="Id_DetTur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Tur" Type="Int32" Nullable="false" />
+    <Property Name="Id_TS" Type="Int32" Nullable="false" />
+    <Property Name="Id_Pers" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Personal" Relationship="Self.FK__DetalleTu__Id_Pe__2F10007B" FromRole="DetalleTurno" ToRole="Personal" />
+    <NavigationProperty Name="TipoServicio" Relationship="Self.FK__DetalleTu__Id_TS__2E1BDC42" FromRole="DetalleTurno" ToRole="TipoServicio" />
+    <NavigationProperty Name="Turno" Relationship="Self.FK__DetalleTu__Id_Tu__2D27B809" FromRole="DetalleTurno" ToRole="Turno" />
+  </EntityType>
+  <EntityType Name="Dia">
+    <Key>
+      <PropertyRef Name="Id_Dia" />
+    </Key>
+    <Property Name="Id_Dia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Mes" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Mes" Relationship="Self.FK__Dia__Id_Mes__1ED998B2" FromRole="Dia" ToRole="Mes" />
+    <NavigationProperty Name="DiaxPromocion" Relationship="Self.FK__DiaxPromo__Id_Di__24927208" FromRole="Dia" ToRole="DiaxPromocion" />
+  </EntityType>
+  <EntityType Name="DiaxPromocion">
+    <Key>
+      <PropertyRef Name="Id_DxP" />
+    </Key>
+    <Property Name="Id_DxP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Dia" Type="Int32" Nullable="false" />
+    <Property Name="Id_Prom" Type="Int32" Nullable="false" />
+    <Property Name="Duracion" Type="DateTime" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Dia" Relationship="Self.FK__DiaxPromo__Id_Di__24927208" FromRole="DiaxPromocion" ToRole="Dia" />
+    <NavigationProperty Name="Promocion" Relationship="Self.FK__DiaxPromo__Id_Pr__25869641" FromRole="DiaxPromocion" ToRole="Promocion" />
+  </EntityType>
+  <EntityType Name="Mes">
+    <Key>
+      <PropertyRef Name="Id_Mes" />
+    </Key>
+    <Property Name="Id_Mes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Dia" Relationship="Self.FK__Dia__Id_Mes__1ED998B2" FromRole="Mes" ToRole="Dia" />
+  </EntityType>
+  <EntityType Name="Personal">
+    <Key>
+      <PropertyRef Name="Id_Pers" />
+    </Key>
+    <Property Name="Id_Pers" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Cargo" Type="Int32" Nullable="false" />
+    <Property Name="Nick" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Clave" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" MaxLength="400" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="400" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Dni" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Detalle" Type="String" MaxLength="600" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Ingreso" Type="DateTime" Precision="0" />
+    <Property Name="Sueldo" Type="Int32" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Cargo" Relationship="Self.FK__Personal__Id_Car__15502E78" FromRole="Personal" ToRole="Cargo" />
+    <NavigationProperty Name="DetalleTurno" Relationship="Self.FK__DetalleTu__Id_Pe__2F10007B" FromRole="Personal" ToRole="DetalleTurno" />
+    <NavigationProperty Name="Turno" Relationship="Self.FK__Turno__Id_Pers__2A4B4B5E" FromRole="Personal" ToRole="Turno" />
+  </EntityType>
+  <EntityType Name="Promocion">
+    <Key>
+      <PropertyRef Name="Id_Prom" />
+    </Key>
+    <Property Name="Id_Prom" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_TS" Type="Int32" Nullable="false" />
+    <Property Name="Descuento" Type="Int32" />
+    <Property Name="Total" Type="Int32" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DiaxPromocion" Relationship="Self.FK__DiaxPromo__Id_Pr__25869641" FromRole="Promocion" ToRole="DiaxPromocion" />
+    <NavigationProperty Name="TipoServicio" Relationship="Self.FK__Promocion__Id_TS__21B6055D" FromRole="Promocion" ToRole="TipoServicio" />
+  </EntityType>
+  <EntityType Name="Servicio">
+    <Key>
+      <PropertyRef Name="Id_Serv" />
+    </Key>
+    <Property Name="Id_Serv" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TipoServicio" Relationship="Self.FK__TipoServi__Id_Se__1A14E395" FromRole="Servicio" ToRole="TipoServicio" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TiempoEspera">
+    <Key>
+      <PropertyRef Name="Id_Tur" />
+    </Key>
+    <Property Name="Id_Tur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoraTurno" Type="Time" Precision="7" />
+    <Property Name="HoraAviso" Type="Time" Precision="7" />
+  </EntityType>
+  <EntityType Name="TipoServicio">
+    <Key>
+      <PropertyRef Name="Id_TS" />
+    </Key>
+    <Property Name="Id_TS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Serv" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Detalle" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Precio" Type="Int32" />
+    <Property Name="Duracion" Type="Time" Precision="7" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DetalleTurno" Relationship="Self.FK__DetalleTu__Id_TS__2E1BDC42" FromRole="TipoServicio" ToRole="DetalleTurno" />
+    <NavigationProperty Name="Promocion" Relationship="Self.FK__Promocion__Id_TS__21B6055D" FromRole="TipoServicio" ToRole="Promocion" />
+    <NavigationProperty Name="Servicio" Relationship="Self.FK__TipoServi__Id_Se__1A14E395" FromRole="TipoServicio" ToRole="Servicio" />
+    <NavigationProperty Name="Turno" Relationship="Self.FK__Turno__Id_TS__29572725" FromRole="TipoServicio" ToRole="Turno" />
+    <NavigationProperty Name="Labor" Relationship="BDDPeluqueriaModel.FK__Labor__Id_TipS__49C3F6B7" FromRole="TipoServicio" ToRole="Labor" />
+  </EntityType>
+  <EntityType Name="Turno">
+    <Key>
+      <PropertyRef Name="Id_Tur" />
+    </Key>
+    <Property Name="Id_Tur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Clie" Type="Int32" Nullable="false" />
+    <Property Name="Id_TS" Type="Int32" Nullable="false" />
+    <Property Name="Id_Pers" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Hora" Type="Time" Precision="7" />
+    <Property Name="Total" Type="Int32" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK__Turno__Id_Clie__286302EC" FromRole="Turno" ToRole="Cliente" />
+    <NavigationProperty Name="DetalleTurno" Relationship="Self.FK__DetalleTu__Id_Tu__2D27B809" FromRole="Turno" ToRole="DetalleTurno" />
+    <NavigationProperty Name="Personal" Relationship="Self.FK__Turno__Id_Pers__2A4B4B5E" FromRole="Turno" ToRole="Personal" />
+    <NavigationProperty Name="TipoServicio" Relationship="Self.FK__Turno__Id_TS__29572725" FromRole="Turno" ToRole="TipoServicio" />
+  </EntityType>
+  <Association Name="FK__Personal__Id_Car__15502E78">
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="1" />
+    <End Role="Personal" Type="Self.Personal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="Id_Cargo" />
+      </Principal>
+      <Dependent Role="Personal">
+        <PropertyRef Name="Id_Cargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Turno__Id_Clie__286302EC">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Turno" Type="Self.Turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id_Clie" />
+      </Principal>
+      <Dependent Role="Turno">
+        <PropertyRef Name="Id_Clie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleTu__Id_Pe__2F10007B">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="1" />
+    <End Role="DetalleTurno" Type="Self.DetalleTurno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="Id_Pers" />
+      </Principal>
+      <Dependent Role="DetalleTurno">
+        <PropertyRef Name="Id_Pers" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleTu__Id_TS__2E1BDC42">
+    <End Role="TipoServicio" Type="Self.TipoServicio" Multiplicity="1" />
+    <End Role="DetalleTurno" Type="Self.DetalleTurno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoServicio">
+        <PropertyRef Name="Id_TS" />
+      </Principal>
+      <Dependent Role="DetalleTurno">
+        <PropertyRef Name="Id_TS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleTu__Id_Tu__2D27B809">
+    <End Role="Turno" Type="Self.Turno" Multiplicity="1" />
+    <End Role="DetalleTurno" Type="Self.DetalleTurno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="Id_Tur" />
+      </Principal>
+      <Dependent Role="DetalleTurno">
+        <PropertyRef Name="Id_Tur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Dia__Id_Mes__1ED998B2">
+    <End Role="Mes" Type="Self.Mes" Multiplicity="1" />
+    <End Role="Dia" Type="Self.Dia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mes">
+        <PropertyRef Name="Id_Mes" />
+      </Principal>
+      <Dependent Role="Dia">
+        <PropertyRef Name="Id_Mes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DiaxPromo__Id_Di__24927208">
+    <End Role="Dia" Type="Self.Dia" Multiplicity="1" />
+    <End Role="DiaxPromocion" Type="Self.DiaxPromocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dia">
+        <PropertyRef Name="Id_Dia" />
+      </Principal>
+      <Dependent Role="DiaxPromocion">
+        <PropertyRef Name="Id_Dia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DiaxPromo__Id_Pr__25869641">
+    <End Role="Promocion" Type="Self.Promocion" Multiplicity="1" />
+    <End Role="DiaxPromocion" Type="Self.DiaxPromocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promocion">
+        <PropertyRef Name="Id_Prom" />
+      </Principal>
+      <Dependent Role="DiaxPromocion">
+        <PropertyRef Name="Id_Prom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Turno__Id_Pers__2A4B4B5E">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="1" />
+    <End Role="Turno" Type="Self.Turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="Id_Pers" />
+      </Principal>
+      <Dependent Role="Turno">
+        <PropertyRef Name="Id_Pers" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Promocion__Id_TS__21B6055D">
+    <End Role="TipoServicio" Type="Self.TipoServicio" Multiplicity="1" />
+    <End Role="Promocion" Type="Self.Promocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoServicio">
+        <PropertyRef Name="Id_TS" />
+      </Principal>
+      <Dependent Role="Promocion">
+        <PropertyRef Name="Id_TS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TipoServi__Id_Se__1A14E395">
+    <End Role="Servicio" Type="Self.Servicio" Multiplicity="1" />
+    <End Role="TipoServicio" Type="Self.TipoServicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicio">
+        <PropertyRef Name="Id_Serv" />
+      </Principal>
+      <Dependent Role="TipoServicio">
+        <PropertyRef Name="Id_Serv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Turno__Id_TS__29572725">
+    <End Role="TipoServicio" Type="Self.TipoServicio" Multiplicity="1" />
+    <End Role="Turno" Type="Self.Turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoServicio">
+        <PropertyRef Name="Id_TS" />
+      </Principal>
+      <Dependent Role="Turno">
+        <PropertyRef Name="Id_TS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDDPeluqueriaEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cargo" EntityType="Self.Cargo" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="DetalleTurno" EntityType="Self.DetalleTurno" />
+    <EntitySet Name="Dia" EntityType="Self.Dia" />
+    <EntitySet Name="DiaxPromocion" EntityType="Self.DiaxPromocion" />
+    <EntitySet Name="Mes" EntityType="Self.Mes" />
+    <EntitySet Name="Personal" EntityType="Self.Personal" />
+    <EntitySet Name="Promocion" EntityType="Self.Promocion" />
+    <EntitySet Name="Servicio" EntityType="Self.Servicio" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TiempoEspera" EntityType="Self.TiempoEspera" />
+    <EntitySet Name="TipoServicio" EntityType="Self.TipoServicio" />
+    <EntitySet Name="Turno" EntityType="Self.Turno" />
+    <AssociationSet Name="FK__Personal__Id_Car__15502E78" Association="Self.FK__Personal__Id_Car__15502E78">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="Personal" EntitySet="Personal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Turno__Id_Clie__286302EC" Association="Self.FK__Turno__Id_Clie__286302EC">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Turno" EntitySet="Turno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleTu__Id_Pe__2F10007B" Association="Self.FK__DetalleTu__Id_Pe__2F10007B">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="DetalleTurno" EntitySet="DetalleTurno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleTu__Id_TS__2E1BDC42" Association="Self.FK__DetalleTu__Id_TS__2E1BDC42">
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+      <End Role="DetalleTurno" EntitySet="DetalleTurno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleTu__Id_Tu__2D27B809" Association="Self.FK__DetalleTu__Id_Tu__2D27B809">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="DetalleTurno" EntitySet="DetalleTurno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Dia__Id_Mes__1ED998B2" Association="Self.FK__Dia__Id_Mes__1ED998B2">
+      <End Role="Mes" EntitySet="Mes" />
+      <End Role="Dia" EntitySet="Dia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DiaxPromo__Id_Di__24927208" Association="Self.FK__DiaxPromo__Id_Di__24927208">
+      <End Role="Dia" EntitySet="Dia" />
+      <End Role="DiaxPromocion" EntitySet="DiaxPromocion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DiaxPromo__Id_Pr__25869641" Association="Self.FK__DiaxPromo__Id_Pr__25869641">
+      <End Role="Promocion" EntitySet="Promocion" />
+      <End Role="DiaxPromocion" EntitySet="DiaxPromocion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Turno__Id_Pers__2A4B4B5E" Association="Self.FK__Turno__Id_Pers__2A4B4B5E">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="Turno" EntitySet="Turno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Promocion__Id_TS__21B6055D" Association="Self.FK__Promocion__Id_TS__21B6055D">
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+      <End Role="Promocion" EntitySet="Promocion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TipoServi__Id_Se__1A14E395" Association="Self.FK__TipoServi__Id_Se__1A14E395">
+      <End Role="Servicio" EntitySet="Servicio" />
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Turno__Id_TS__29572725" Association="Self.FK__Turno__Id_TS__29572725">
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+      <End Role="Turno" EntitySet="Turno" />
+    </AssociationSet>
+    <EntitySet Name="Labor" EntityType="BDDPeluqueriaModel.Labor" />
+    <AssociationSet Name="FK__Labor__Id_TipS__49C3F6B7" Association="BDDPeluqueriaModel.FK__Labor__Id_TipS__49C3F6B7">
+      <End Role="TipoServicio" EntitySet="TipoServicio" />
+      <End Role="Labor" EntitySet="Labor" />
+    </AssociationSet>
+    <EntitySet Name="V_Clientes" EntityType="BDDPeluqueriaModel.V_Clientes" />
+  </EntityContainer>
+  <EntityType Name="Labor">
+    <Key>
+      <PropertyRef Name="IdLabor" />
+    </Key>
+    <Property Name="IdLabor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_TipS" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Detalle" Type="String" MaxLength="700" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TipoServicio" Relationship="BDDPeluqueriaModel.FK__Labor__Id_TipS__49C3F6B7" FromRole="Labor" ToRole="TipoServicio" />
+  </EntityType>
+  <Association Name="FK__Labor__Id_TipS__49C3F6B7">
+    <End Type="BDDPeluqueriaModel.TipoServicio" Role="TipoServicio" Multiplicity="1" />
+    <End Type="BDDPeluqueriaModel.Labor" Role="Labor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoServicio">
+        <PropertyRef Name="Id_TS" />
+      </Principal>
+      <Dependent Role="Labor">
+        <PropertyRef Name="Id_TipS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="V_Clientes">
+    <Key>
+      <PropertyRef Name="Id_Clie" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="Apellido" />
+    </Key>
+    <Property Name="Id_Clie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Dni" Type="Int32" />
+    <Property Name="Detalle" Type="String" MaxLength="600" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Inscrip" Type="DateTime" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="E_mail" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>
