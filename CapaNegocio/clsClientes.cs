@@ -16,26 +16,27 @@ namespace CapaNegocio
 
       public List<Cliente> LeerListado()
       {
-        BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+        BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
         return BD.Cliente.ToList();
       }
 
-      public Cliente LeerPorNumero(int idCliente)
+      public V_Clientes LeerPorNumero(string filt)
       {
-        BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
-        return BD.Cliente.SingleOrDefault(b => b.Id_Clie == idCliente);
+
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
+         return BD.V_Clientes.SingleOrDefault(b => b.Nombre.Contains(filt) || b.Apellido.Contains(filt) || b.Dni == Convert.ToInt32(filt));
       }
 
       public int Crear(Cliente cliente)
       {
-        BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+        BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
         BD.Cliente.Add(cliente);
         return BD.SaveChanges();
       }
 
       public int Actualizar(Cliente cliente)
       {
-        BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+        BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
         Cliente c = BD.Cliente.SingleOrDefault(b => b.Id_Clie == cliente.Id_Clie);
         if (c != null)
         {
@@ -55,19 +56,12 @@ namespace CapaNegocio
           return 0;
       }
 
-      public int Borrar(int numeroCliente)
+      public V_Clientes Filtro(string filt)
       {
-        BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
-        Cliente c = BD.Cliente.SingleOrDefault(b => b.Id_Clie == numeroCliente);
-        if (c != null)
-        {
-          BD.Cliente.Remove(c);
-          return BD.SaveChanges();
-        }
-        else
-          return 0;
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
+         return BD.V_Clientes.SingleOrDefault(b => b.Nombre.Contains(filt) || b.Apellido.Contains(filt) || b.Dni==Convert.ToInt32(filt));
       }
 
 
-    }
+   }
 }

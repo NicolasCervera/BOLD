@@ -11,32 +11,32 @@ namespace CapaNegocio
    {
       public List<Turno> LeerListadoDisponibles()
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          return BD.Turno.Where(x => x.Estado == "Disponible").OrderBy(x => x.Fecha).ToList();
       }
 
       public List<Turno> LeerListado()
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          return BD.Turno.OrderBy(x => x.Fecha).ToList();
       }
 
       public List<Turno> LeerListadoNoDisponibles()
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          return BD.Turno.Where(x => x.Estado == "No Disponible").OrderBy(x => x.Fecha).ToList();
       }
 
       public int Crear(Turno turn)
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          BD.Turno.Add(turn);
          return BD.SaveChanges();
       }
 
       public int Actualizar(Turno turn)
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          Turno c = BD.Turno.SingleOrDefault(b => b.Id_Tur == turn.Id_Tur);
          if (c != null)
          {
@@ -60,32 +60,32 @@ namespace CapaNegocio
 
       public List<DetalleTurno> LeerListadoDisponiblesDetalle()
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          return BD.DetalleTurno.Where(x => x.Estado == "Disponible").ToList();
       }
 
       public List<DetalleTurno> LeerListadoDetalle()
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          return BD.DetalleTurno.ToList();
       }
 
       public List<DetalleTurno> LeerListadoNoDisponiblesDetalle()
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          return BD.DetalleTurno.Where(x => x.Estado == "No Disponible").ToList();
       }
 
       public int CrearDetalleTurno(DetalleTurno dturn)
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          BD.DetalleTurno.Add(dturn);
          return BD.SaveChanges();
       }
 
       public int ActualizarDetalleTurno(DetalleTurno dt)
       {
-         BDDPeluqueriaEntities BD = new BDDPeluqueriaEntities();
+         BDDPeluqueriaEntities1 BD = new BDDPeluqueriaEntities1();
          DetalleTurno c = BD.DetalleTurno.SingleOrDefault(b => b.Id_DetTur == dt.Id_DetTur);
          if (c != null)
          {

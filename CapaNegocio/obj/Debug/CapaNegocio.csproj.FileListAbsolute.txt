@@ -52,3 +52,18 @@ D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluqueri
 D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
 D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
 D:\Sistemas\Respaldo\ESCRITORIO\Peluqueria\Copia 18-12-19\Sistema para Peluquerias\SistemaPeluqueria\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\CapaDatos.dll.config
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\EntityFramework.xml
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\nicod\Source\Repos\MOSTACHE\CapaNegocio\obj\Debug\CapaNegocio.pdb

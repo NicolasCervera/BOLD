@@ -55,11 +55,11 @@
          this.groupBox1 = new System.Windows.Forms.GroupBox();
          this.btnAgregar = new Bunifu.Framework.UI.BunifuThinButton2();
          this.groupBox2 = new System.Windows.Forms.GroupBox();
-         this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-         this.textBox1 = new System.Windows.Forms.TextBox();
+         this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
          this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
          this.txtNombre = new System.Windows.Forms.TextBox();
-         this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+         this.textBox1 = new System.Windows.Forms.TextBox();
+         this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
          ((System.ComponentModel.ISupportInitialize)(this.dtgvClientes)).BeginInit();
          this.groupBox1.SuspendLayout();
          this.groupBox2.SuspendLayout();
@@ -346,54 +346,6 @@
          this.groupBox2.TabStop = false;
          this.groupBox2.Text = "Filtro por cliente:";
          // 
-         // bunifuSeparator1
-         // 
-         this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-         this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-         this.bunifuSeparator1.LineThickness = 12;
-         this.bunifuSeparator1.Location = new System.Drawing.Point(7, 90);
-         this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-         this.bunifuSeparator1.Name = "bunifuSeparator1";
-         this.bunifuSeparator1.Size = new System.Drawing.Size(242, 3);
-         this.bunifuSeparator1.TabIndex = 41;
-         this.bunifuSeparator1.Transparency = 255;
-         this.bunifuSeparator1.Vertical = false;
-         // 
-         // textBox1
-         // 
-         this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-         this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.textBox1.ForeColor = System.Drawing.Color.Gray;
-         this.textBox1.Location = new System.Drawing.Point(6, 67);
-         this.textBox1.Name = "textBox1";
-         this.textBox1.Size = new System.Drawing.Size(242, 19);
-         this.textBox1.TabIndex = 40;
-         this.textBox1.Text = "DNI";
-         // 
-         // bunifuSeparator2
-         // 
-         this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-         this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-         this.bunifuSeparator2.LineThickness = 12;
-         this.bunifuSeparator2.Location = new System.Drawing.Point(7, 46);
-         this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-         this.bunifuSeparator2.Name = "bunifuSeparator2";
-         this.bunifuSeparator2.Size = new System.Drawing.Size(242, 3);
-         this.bunifuSeparator2.TabIndex = 39;
-         this.bunifuSeparator2.Transparency = 255;
-         this.bunifuSeparator2.Vertical = false;
-         // 
-         // txtNombre
-         // 
-         this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-         this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtNombre.ForeColor = System.Drawing.Color.Gray;
-         this.txtNombre.Location = new System.Drawing.Point(7, 25);
-         this.txtNombre.Name = "txtNombre";
-         this.txtNombre.Size = new System.Drawing.Size(242, 19);
-         this.txtNombre.TabIndex = 38;
-         this.txtNombre.Text = "Nombre";
-         // 
          // bunifuThinButton21
          // 
          this.bunifuThinButton21.ActiveBorderThickness = 1;
@@ -419,6 +371,54 @@
          this.bunifuThinButton21.TabIndex = 37;
          this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
          // 
+         // bunifuSeparator2
+         // 
+         this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+         this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+         this.bunifuSeparator2.LineThickness = 5;
+         this.bunifuSeparator2.Location = new System.Drawing.Point(7, 46);
+         this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+         this.bunifuSeparator2.Name = "bunifuSeparator2";
+         this.bunifuSeparator2.Size = new System.Drawing.Size(242, 10);
+         this.bunifuSeparator2.TabIndex = 39;
+         this.bunifuSeparator2.Transparency = 255;
+         this.bunifuSeparator2.Vertical = false;
+         // 
+         // txtNombre
+         // 
+         this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+         this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.txtNombre.ForeColor = System.Drawing.Color.Gray;
+         this.txtNombre.Location = new System.Drawing.Point(7, 25);
+         this.txtNombre.Name = "txtNombre";
+         this.txtNombre.Size = new System.Drawing.Size(242, 19);
+         this.txtNombre.TabIndex = 38;
+         this.txtNombre.Text = "Nombre";
+         // 
+         // textBox1
+         // 
+         this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+         this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.textBox1.ForeColor = System.Drawing.Color.Gray;
+         this.textBox1.Location = new System.Drawing.Point(6, 67);
+         this.textBox1.Name = "textBox1";
+         this.textBox1.Size = new System.Drawing.Size(242, 19);
+         this.textBox1.TabIndex = 40;
+         this.textBox1.Text = "DNI";
+         // 
+         // bunifuSeparator1
+         // 
+         this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+         this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+         this.bunifuSeparator1.LineThickness = 5;
+         this.bunifuSeparator1.Location = new System.Drawing.Point(7, 90);
+         this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+         this.bunifuSeparator1.Name = "bunifuSeparator1";
+         this.bunifuSeparator1.Size = new System.Drawing.Size(242, 10);
+         this.bunifuSeparator1.TabIndex = 41;
+         this.bunifuSeparator1.Transparency = 255;
+         this.bunifuSeparator1.Vertical = false;
+         // 
          // frmCaja
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,7 +429,6 @@
          this.Controls.Add(this.groupBox1);
          this.Controls.Add(this.dtgvClientes);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-         this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
          this.Name = "frmCaja";
          this.Text = "frmCaja";
          ((System.ComponentModel.ISupportInitialize)(this.dtgvClientes)).EndInit();

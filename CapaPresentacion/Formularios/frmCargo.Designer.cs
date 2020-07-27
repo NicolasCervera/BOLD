@@ -28,9 +28,9 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCargo));
          this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
          this.txtEstado = new System.Windows.Forms.TextBox();
@@ -128,39 +128,39 @@
          // dtgvCargo
          // 
          this.dtgvCargo.AllowUserToAddRows = false;
-         dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-         dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkGray;
-         dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-         dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DimGray;
-         dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-         this.dtgvCargo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+         dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+         dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkGray;
+         dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+         dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DimGray;
+         dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+         this.dtgvCargo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
          this.dtgvCargo.Anchor = System.Windows.Forms.AnchorStyles.Right;
          this.dtgvCargo.BackgroundColor = System.Drawing.Color.Gainsboro;
          this.dtgvCargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
          this.dtgvCargo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-         dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-         dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSeaGreen;
-         dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-         dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-         dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-         dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-         this.dtgvCargo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+         dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+         dataGridViewCellStyle11.BackColor = System.Drawing.Color.LightSeaGreen;
+         dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+         dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+         dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+         dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+         this.dtgvCargo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
          this.dtgvCargo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.dtgvCargo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idC,
             this.Nombre_de_Cargo,
             this.Descripcion_de_Cargo,
             this.Estado});
-         dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-         dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkGray;
-         dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-         dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DimGray;
-         dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-         dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-         this.dtgvCargo.DefaultCellStyle = dataGridViewCellStyle3;
+         dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+         dataGridViewCellStyle12.BackColor = System.Drawing.Color.DarkGray;
+         dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+         dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.DimGray;
+         dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+         dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+         this.dtgvCargo.DefaultCellStyle = dataGridViewCellStyle12;
          this.dtgvCargo.DoubleBuffered = true;
          this.dtgvCargo.EnableHeadersVisualStyles = false;
          this.dtgvCargo.HeaderBgColor = System.Drawing.Color.LightSeaGreen;
@@ -322,7 +322,6 @@
          this.Controls.Add(this.bunifuSeparator2);
          this.Controls.Add(this.txtNombre);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-         this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
          this.Name = "frmCargo";
          this.Text = "frmCargo";
          this.Load += new System.EventHandler(this.frmCargo_Load);
