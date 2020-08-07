@@ -21,5 +21,9 @@ namespace CapaPresentacion.Formularios.otraPrueba
 		{
 			//probando
 		}
+		private void ramaPrueba2()
+		{
+			//probando
+		}
 	}
 }
