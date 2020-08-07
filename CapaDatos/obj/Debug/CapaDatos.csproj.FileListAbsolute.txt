@@ -52,3 +52,15 @@ C:\Users\nicod\Source\Repos\MOSTACHE\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCo
 C:\Users\nicod\Source\Repos\MOSTACHE\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\nicod\Source\Repos\MOSTACHE\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\nicod\Source\Repos\MOSTACHE\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Nicolas\Source\Repos\MOSTACHE\CapaDatos\obj\Debug\CapaDatos.pdb
