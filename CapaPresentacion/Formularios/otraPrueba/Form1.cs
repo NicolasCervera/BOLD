@@ -16,14 +16,15 @@ namespace CapaPresentacion.Formularios.otraPrueba
 		{
 			InitializeComponent();
 		}
-
-		private void cambiosEnRamaMaster()
-		{
-			//probando
-		}
+		
 		private void ramaPrueba2()
 		{
 			//probando
+		}
+
+		private void ramaPrueba1()
+		{
+			//probando rama
 		}
 	}
 }
