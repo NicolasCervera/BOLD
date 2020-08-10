@@ -22,9 +22,9 @@ namespace CapaPresentacion.Formularios.otraPrueba
 			//probando
 		}
 
-		private void ramaPrueba3()
+		private void ramaPrueba1()
 		{
-			//probando
+			//probando rama
 		}
 	}
 }
